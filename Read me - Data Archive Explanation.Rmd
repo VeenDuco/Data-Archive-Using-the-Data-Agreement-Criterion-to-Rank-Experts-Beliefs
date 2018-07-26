@@ -33,7 +33,7 @@ This is the data archive for the manuscript: Using the Data Agreement Criterion 
 #### On the data collection
 
 The period in which all data are collected is between 01-12-2015 and 01-04-2016.
-All participants in the study were healthy human participants, we did not use invasive techniques, psychological manipulation or administer any substances. Therefore, compliant with Dutch law, this study only required, and received approval from our internal Ethics Committee of the Faculty of Social and Behavioural Sciences of Utrecht University, see the file [“Ethical approval - FETC16-001 (Schoot).pdf”]() for the letter of approval.
+All participants in the study were healthy human participants, we did not use invasive techniques, psychological manipulation or administer any substances. Therefore, compliant with Dutch law, this study only required, and received approval from our internal Ethics Committee of the Faculty of Social and Behavioural Sciences of Utrecht University, see the file [“Ethical approval - FETC16-001 (Schoot).pdf”](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Ethical%20approval%20-%20FETC16-001%20(Schoot).pdf) for the letter of approval.
 
 Elicitation data is collected by Duco Veen, and raw data concerning variables of interest are provided by the company participating in the study. The participating company is not specifically named due to contractual agreements, for more information the facilitating company [Profitwise](http://www.profitwise.nl/) can be contacted.
 
@@ -55,82 +55,82 @@ Below we expand on all the files in the folders.
 <div class="column-left">
 #### Analyses
 
- - [Figure1_KL_div.r]() <br>
+ - [Figure1_KL_div.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure1_KL_div.r) <br>
 R script to produce Figure 1 in the manuscript.
- - [Figure1.png]() <br>
+ - [Figure1.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure1.png) <br>
 Figure 1 of the manuscript.
- - [Figure2_KL_div.r]() <br>
+ - [Figure2_KL_div.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure2_KL_div.r) <br>
 R script to produce Figure 2 in the manuscript.
- - [Figure2.png]() <br>
+ - [Figure2.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure2.png) <br>
 Figure 2 of the manuscript. 
- - [Figure3.r]() <br>
+ - [Figure3.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure3.R) <br>
 R script to produce Figure 3 in the manuscript.
- - [Figure3.png]() <br>
+ - [Figure3.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure3.png) <br>
 Figure 3 of the manuscript.
- - [Figure4.r]() <br>
+ - [Figure4.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4.R) <br>
 R Script to run the simulation study from the manuscript and produce the interactive results figures A-D in html form.
- - [Figure4_A.html]() <br>
+ - [Figure4_A.html](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4_A.html) <br>
 Interactive form of results for the first simulation scenario.
- - [Figure4_B.html]() <br>
+ - [Figure4_B.html](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4_B.html) <br>
 Interactive form of results for the second simulation scenario.
- - [Figure4_C.html]() <br>
+ - [Figure4_C.html](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4_C.html) <br>
 Interactive form of results for the third simulation scenario.
- - [Figure4_D.html]() <br>
+ - [Figure4_D.html](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4_D.html) <br>
 Interactive form of results for the fourth simulation scenario.
- - [Figure4.pptx]() <br>
+ - [Figure4.pptx](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4.pptx) <br>
 PowerPoint file to get a summary of the four scenarios in one figure.
- - [Figure4.png]() <br>
+ - [Figure4.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure4.png) <br>
 Png file of the results of the four scenarios in one figure. Figure 4 in the manuscript. 
- - [Figure5_and_6_Table_1_and_2.r]() <br>
+ - [Figure5_and_6_Table_1_and_2.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5_and_6_Table_1_and_2.r) <br>
 R script to produce the results from the empirical study, figures 5 and 6 and tables 1 and 2. The script includes the transformed data for the empirical study. As the posterior from the benchmark and the data was run using rjags which, does not work with the set.seed function in R, the R environment from the run that was used to produce the results from the manuscript is also stored. 
- - [Figure5_and_6_Table_1_and_2.RData]() <br>
+ - [Figure5_and_6_Table_1_and_2.RData](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5_and_6_Table_1_and_2.RData) <br>
 The R environment from the run that was used to produce the results from the manuscript. This is stored due to that the posterior from the benchmark and the data was run using rjags which, does not work with the set.seed function in R.
- - [Figure5.png]() <br>
+ - [Figure5.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5.png) <br>
 Figure 5 of the manuscript.
- - [Figure6_1.png]() <br>
+ - [Figure6_1.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_1.png) <br>
 Panel A of figure 6 in the manuscript.
- - [Figure6_2.png]() <br>
+ - [Figure6_2.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_2.png) <br>
 Panel B of figure 6 in the manuscript.
- - [Figure6_3.png]() <br>
+ - [Figure6_3.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_3.png) <br>
 Panel C of figure 6 in the manuscript.
- - [Figure6_4.png]() <br>
+ - [Figure6_4.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_4.png) <br>
 Panel D of figure 6 in the manuscript.
- - [Figure6_bench.png]() <br>
+ - [Figure6_bench.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_bench.png) <br>
 Panel E of figure 6 in the manuscript.
- - [Figure6.pptx]() <br>
+ - [Figure6.pptx](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6.pptx) <br>
 PowerPoint file to get all panels A-E in one figure.
- - [Figure6.png]() <br>
+ - [Figure6.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure6.png) <br>
 Png file of the panels A-E in one figure. Figure 6 in the manuscript.
- - [Table1.csv]() <br>
+ - [Table1.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/table1.csv) <br>
 Contains the results for table 1.
- - [Table2.csv]() <br>
+ - [Table2.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/table2.csv) <br>
 Contains the results for table 2.
  - [sensitivity analysis different benchmarks.r] <br>
-The R script to run the sensitivity analysis as described in the manuscript. Note that for benchmark equal to U(0,5) we use the results of [Figure5_and_6_Table_1_and_2.RData]().
+The R script to run the sensitivity analysis as described in the manuscript. Note that for benchmark equal to U(0,5) we use the results of [Figure5_and_6_Table_1_and_2.RData](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5_and_6_Table_1_and_2.RData).
  - [sensitivity analysis different benchmarks.rdata]() <br>
- The environment with the results of the sensitivity analysis. Note that for benchmark equal to U(0,5) we use the results of [Figure5_and_6_Table_1_and_2.RData]().
- - [Calculating posteriors and BF.r]()
+ The environment with the results of the sensitivity analysis. Note that for benchmark equal to U(0,5) we use the results of [Figure5_and_6_Table_1_and_2.RData](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5_and_6_Table_1_and_2.RData).
+ - [Calculating posteriors and BF.r](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Calculating%20posteriors%20and%20BF.R)
 R script that was used to calculate the posteriors and obtain the bayes factors using rstan and bridgesampling packages.
 </div>
 
 
 <div class="column-right">
 #### Elicitation Empirical Study
-- [Logbook - where to find which data files - Empirical study.docx]() <br>
+- [Logbook - where to find which data files - Empirical study.docx](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Logbook%20-%20where%20to%20find%20which%20data%20files%20-%20Empirical%20study.docx) <br>
 This file explains where all the data is stored, e.g. the raw data concerning the empirical study is stored at Profitwise, the transformed data at Profitwise and Utrecht University.  
-- [Transformed_data_file.csv]() <br>
+- [Transformed_data_file.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Transformed_data_file.csv) <br>
 Contains the transformed data for the variables of interest of the study.
-- [Transformed_Elicited_Distributions_Whole_Company.csv]() <br>
+- [Transformed_Elicited_Distributions_Whole_Company.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Transformed_Elicited_Distributions_Whole_Company.csv) <br>
 Contains the transformed elicited distributions concerning the variables of interested.
-- [server.R]() <br>
+- [server.R](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Server.R) <br>
 Contains the R code for the server of the first shiny application used in the empirical study.
-- [server2.R]() <br>
+- [server2.R](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Surver2.R) <br>
 Contains the R code for the server of the second shiny application used in the empirical study.
-- [Setup.R]() <br>
+- [Setup.R](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/Setup.R) <br>
 Contains the R code to link the server and user interface files for shiny application one and two and to run both applications.
-- [ui.R]() <br>
+- [ui.R](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/ui.R) <br>
 Contains the R code for the user interface of the first shiny application used in the empirical study.
-- [ui2.R]() <br>
+- [ui2.R](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Elicitation%20Empirical%20Study/ui2.R) <br>
 Contains the R code for the user interface of the second shiny application used in the empirical study.
 
 </div>
