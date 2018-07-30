@@ -15,6 +15,7 @@ experts  <- data.frame(matrix(c(2.15222623,0.09222707,0.77699404,2.15968728,0.06
                                      1.9704492,0.1061564,0.8242798,2.3513215,0.1129617,0.9365372),ncol=4,nrow=3))
 rownames(experts) <- c("mean","sd","skewness")
 colnames(experts) <- c("Expert.1","Expert.2","Expert.3","Expert.4")
+experts <- t(experts)
 #experts' priors
 
 

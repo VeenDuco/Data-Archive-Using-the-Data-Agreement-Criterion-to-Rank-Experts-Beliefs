@@ -164,16 +164,15 @@ DACd <- c(DAC_expert1,DAC_expert2,DAC_expert3,DAC_expert4)
 ## legend function from https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics
 add_legend <- function(...) {
   opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
-              mar=c(0, 0, 0, 0), new=TRUE)
+              mar=c(0, 0, 0, 0), new=T)
   on.exit(par(opar))
-  plot(0, 0, type='n', bty='n', xaxt='n', yaxt='n')
+  
   legend(...)
 }
-
-par(mfrow=c(1,1))
+setwd(paste0(getwd(),"/Analyses"))
+png(file="Figure6.png",width=3200,height=3200,res=300) #to store in png
+par(mfrow=c(3,2))
 par(mar = c(5, 4, 3, 0.2)) ## setting for legend function
-
-png(file="figure6_1.png",width=800,height=400) #to store in png
 
 ## figure expert 1
 x.axis <- seq(0,5,by=.001) #get range for x-axis
@@ -182,83 +181,70 @@ plot(x.axis,expert1[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),
 lines(x.axis,expert1[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert1[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert1[1000:4000,3],col="darkgreen",density=10)
+legend("topleft","A",bty="n", cex=2)
+legend("topright","d = 1",bty="n", cex=2)
+
+#dev.off() # get png filled
 
 
-add_legend("top", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[1],"(",theta,")")),
-                           expression(paste("KL[",pi^J,"(",theta,"|y)","||",pi[1],"(",theta,")","]"))), lty=1, 
-           col=c("red", "blue","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=3)
-
-dev.off() # get png filled
-
-
-png(file="figure6_2.png",width=800,height=400) #to store in png
+#png(file="figure6_2.png",width=800,height=400) #to store in png
 ## figure expert 2
 plot(x.axis,expert2[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
      lwd=3,cex.lab=1.5,cex.axis=1.5)
 lines(x.axis,expert2[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert2[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert2[1000:4000,3],col="darkgreen",density=10)
+legend("topleft","B",bty="n", cex=2)
+legend("topright","d = 2",bty="n", cex=2)
 
 
-add_legend("top", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[2],"(",theta,")")),
-                           expression(paste("KL[",pi^J,"(",theta,"|y)","||",pi[2],"(",theta,")","]"))), lty=1, 
-           col=c("red", "blue","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=3)
+#dev.off() # get png filled
 
 
-dev.off() # get png filled
-
-
-png(file="figure6_3.png",width=800,height=400) #to store in png
+#png(file="figure6_3.png",width=800,height=400) #to store in png
 ## figure expert 3
 plot(x.axis,expert3[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
      lwd=3,cex.lab=1.5,cex.axis=1.5)
 lines(x.axis,expert3[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert3[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert3[1000:4000,3],col="darkgreen",density=10)
+legend("topleft","C",bty="n", cex=2)
+legend("topright","d = 3",bty="n", cex=2)
+
+#dev.off() # get png filled
 
 
-add_legend("top", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[3],"(",theta,")")),
-                           expression(paste("KL[",pi^J,"(",theta,"|y)","||",pi[3],"(",theta,")","]"))), lty=1, 
-           col=c("red", "blue","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=3)
-
-
-dev.off() # get png filled
-
-
-png(file="figure6_4.png",width=800,height=400) #to store in png
+#png(file="figure6_4.png",width=800,height=400) #to store in png
 ## figure expert 4
 plot(x.axis,expert4[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
      lwd=3,cex.lab=1.5,cex.axis=1.5)
 lines(x.axis,expert4[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert4[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert4[1000:4000,3],col="darkgreen",density=10)
+legend("topleft","D",bty="n", cex=2)
+legend("topright","d = 4",bty="n", cex=2)
 
 
-add_legend("top", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[4],"(",theta,")")),
-                           expression(paste("KL[",pi^J,"(",theta,"|y)","||",pi[4],"(",theta,")","]"))), lty=1, 
-           col=c("red", "blue","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=3)
+#dev.off() # get png filled
 
-
-dev.off() # get png filled
-
-png(file="figure6_bench.png",width=800,height=400) #to store in png
+#png(file="figure6_bench.png",width=800,height=400) #to store in png
 ## figure expert 4
 plot(x.axis,benchmark[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
      lwd=3,cex.lab=1.5,cex.axis=1.5)
 lines(x.axis,benchmark[,2],col="darkgoldenrod",type="l",lwd=3)
 lines(x.axis,benchmark[,3],col="darkgreen",lwd=3)
 polygon(x.axis,benchmark[,3],col="darkgreen",density=10)
+legend("topleft","E",bty="n", cex=2)
 
 
-add_legend("top", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi^J,"(",theta,")")),
-                           expression(paste("KL[",pi^J,"(",theta,"|y)","||",pi^J,"(",theta,")","]"))), lty=1, 
-           col=c("red", "darkgoldenrod","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=3)
 
+plot(0, 0, type='n', bty='n', xaxt='n', yaxt='n',ylab="",xlab="")
+legend("center", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[d],"(",theta,")")),
+                          expression(paste(pi^J,"(",theta,")")),
+                          expression(paste("KL[",pi^J,"(.|y)","||",pi[d],"]"," (panel A-D)")),
+                          expression(paste("KL[",pi^J,"(.|y)","||",pi^J,"]"," (panel E)"))), lty=1, 
+       col=c("red", "blue","darkgoldenrod","darkgreen", "darkgreen" ),
+       horiz=F, bty='n', cex=2.5,lwd=3)
 
 dev.off() # get png filled
 

@@ -87,20 +87,8 @@ R script to produce the results from the empirical study, figures 5 and 6 and ta
 The R environment from the run that was used to produce the results from the manuscript. This is stored due to that the posterior from the benchmark and the data was run using rjags which, does not work with the set.seed function in R.
  - [Figure5.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5.png) <br>
 Figure 5 of the manuscript.
- - [Figure6_1.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_1.png) <br>
-Panel A of figure 6 in the manuscript.
- - [Figure6_2.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_2.png) <br>
-Panel B of figure 6 in the manuscript.
- - [Figure6_3.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_3.png) <br>
-Panel C of figure 6 in the manuscript.
- - [Figure6_4.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_4.png) <br>
-Panel D of figure 6 in the manuscript.
- - [Figure6_bench.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6_bench.png) <br>
-Panel E of figure 6 in the manuscript.
- - [Figure6.pptx](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6.pptx) <br>
-PowerPoint file to get all panels A-E in one figure.
- - [Figure6.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure6.png) <br>
-Png file of the panels A-E in one figure. Figure 6 in the manuscript.
+ - [Figure6.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6.png) <br>
+Figure 6 in the manuscript.
  - [Table1.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/table1.csv) <br>
 Contains the results for table 1.
  - [Table2.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/table2.csv) <br>
