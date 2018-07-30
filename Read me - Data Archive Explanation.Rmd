@@ -87,7 +87,7 @@ R script to produce the results from the empirical study, figures 5 and 6 and ta
 The R environment from the run that was used to produce the results from the manuscript. This is stored due to that the posterior from the benchmark and the data was run using rjags which, does not work with the set.seed function in R.
  - [Figure5.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure5.png) <br>
 Figure 5 of the manuscript.
- - [Figure6.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/figure6.png) <br>
+ - [Figure6.png](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/Figure6.png) <br>
 Figure 6 in the manuscript.
  - [Table1.csv](https://github.com/VeenDuco/Data-Archive-Using-the-Data-Agreement-Criterion-to-Rank-Experts-Beliefs/blob/master/Analyses/table1.csv) <br>
 Contains the results for table 1.
