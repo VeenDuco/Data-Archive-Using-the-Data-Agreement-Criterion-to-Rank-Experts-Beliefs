@@ -33,9 +33,9 @@ KLskewednormal <- function(mu1,mu2,sigma1,sigma2,gamma1,gamma2,x){
   return(out)
 }
 
-png(file="figure2.png",width=1400,height=700) #to store in png
+png(file="figure2.png",width=1500,height=700) #to store in png
 par(mfrow=c(1,2))
-par(mar = c(5, 4, 3, 0.2)) ## setting for legend function
+par(mar = c(5, 5, 6, 1)) ## setting for legend function
 
 
 ## figure 1
@@ -43,25 +43,29 @@ x.axis <- seq(-10,10,by=.001) #get range for x-axis
 out <- KLskewednormal(mu1=0,mu2=0.5,sigma1=1,sigma2=1,gamma1 = 1,gamma2 = 1,x=x.axis) 
 KLdiv(out[,1:2],eps=1e-8)[1,2] # #.125 exact equal to what should be: 0.125 
 
-plot(x.axis,out[,1],col="red",type="l",xlab="",ylab="density",xlim=c(-10,10),ylim=c(-.1,1.3),lwd=3,cex=2,cex.lab=1.6, cex.axis=1.5)
+plot(x.axis,out[,1],col="red",type="l",xlab=expression(theta),
+     ylab="density",xlim=c(-10,10), ylim=c(-.1,1.3),lwd=3,cex=2,cex.lab=2.5, 
+     cex.axis=1.5)
 #polygon(x.axis,out[,1],col="red",density=10)
 lines(x.axis,out[,2],col="blue",type="l",lwd=3)
 #polygon(x.axis,out[,2],col="blue",density=10)
 lines(x.axis,out[,3],col="darkgreen",lwd=3)
 polygon(x.axis,out[,3],col="darkgreen",density=10)
-
+legend("topleft","A",bty="n", cex=3)
 ## for figure 2
 x.axis <- seq(-100,100,by=.001) #get range for x-axis
 out <- KLskewednormal(mu1=0,mu2=0,sigma1=1,sigma2=30,gamma1 = 1,gamma2 = 1,x=x.axis) 
 KLdiv(out[,1:2],eps=1e-8)[1,2] # #2.900864 should be: 2.901753
 
-plot(x.axis,out[,1],col="red",type="l",xlab="",ylab="density",xlim=c(-10,10),ylim=c(-.1,1.3),lwd=3,cex=2,cex.lab=1.6, cex.axis=1.5)
+plot(x.axis,out[,1],col="red",type="l",xlab=expression(theta),
+     ylab="density",xlim=c(-10,10),ylim=c(-.1,1.3),lwd=3,cex=2,cex.lab=2.5,
+     cex.axis=1.5)
 #polygon(x.axis,out[,1],col="red",density=10)
 lines(x.axis,out[,2],col="darkgoldenrod",type="l",lwd=3)
 #polygon(x.axis,out[,2],col="darkgoldenrod",density=10)
 lines(x.axis,out[,3],col="darkgreen",lwd=3)
 polygon(x.axis,out[,3],col="darkgreen",density=10)
-
+legend("topleft","B",bty="n", cex=3)
 
 ## legend function from https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics
 add_legend <- function(...) {
@@ -73,7 +77,7 @@ add_legend <- function(...) {
 }
 add_legend("top", legend=c("Data", "Expert","Benchmark","KL-divergence"), lty=1, 
            col=c("red", "blue","darkgoldenrod","darkgreen"),
-           horiz=TRUE, bty='n', cex=2,lwd=2)
+           horiz=TRUE, bty='n', cex=2.5,lwd=3)
 
 dev.off() # get png filled
 

@@ -172,12 +172,12 @@ add_legend <- function(...) {
 setwd(paste0(getwd(),"/Analyses"))
 png(file="Figure6.png",width=3200,height=3200,res=300) #to store in png
 par(mfrow=c(3,2))
-par(mar = c(5, 4, 3, 0.2)) ## setting for legend function
+par(mar = c(5, 5, 3, 0.4)) ## setting for legend function
 
 ## figure expert 1
 x.axis <- seq(0,5,by=.001) #get range for x-axis
-plot(x.axis,expert1[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
-     lwd=3,cex.lab=1.5,cex.axis=1.5)
+plot(x.axis,expert1[,1],col="red",type="l",xlab=expression(theta),ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
+     lwd=3,cex.lab=2,cex.axis=1.5)
 lines(x.axis,expert1[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert1[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert1[1000:4000,3],col="darkgreen",density=10)
@@ -189,8 +189,8 @@ legend("topright","d = 1",bty="n", cex=2)
 
 #png(file="figure6_2.png",width=800,height=400) #to store in png
 ## figure expert 2
-plot(x.axis,expert2[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
-     lwd=3,cex.lab=1.5,cex.axis=1.5)
+plot(x.axis,expert2[,1],col="red",type="l",xlab=expression(theta),ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
+     lwd=3,cex.lab=2,cex.axis=1.5)
 lines(x.axis,expert2[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert2[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert2[1000:4000,3],col="darkgreen",density=10)
@@ -203,8 +203,8 @@ legend("topright","d = 2",bty="n", cex=2)
 
 #png(file="figure6_3.png",width=800,height=400) #to store in png
 ## figure expert 3
-plot(x.axis,expert3[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
-     lwd=3,cex.lab=1.5,cex.axis=1.5)
+plot(x.axis,expert3[,1],col="red",type="l",xlab=expression(theta),ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
+     lwd=3,cex.lab=2,cex.axis=1.5)
 lines(x.axis,expert3[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert3[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert3[1000:4000,3],col="darkgreen",density=10)
@@ -216,8 +216,8 @@ legend("topright","d = 3",bty="n", cex=2)
 
 #png(file="figure6_4.png",width=800,height=400) #to store in png
 ## figure expert 4
-plot(x.axis,expert4[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
-     lwd=3,cex.lab=1.5,cex.axis=1.5)
+plot(x.axis,expert4[,1],col="red",type="l",xlab=expression(theta),ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
+     lwd=3,cex.lab=2,cex.axis=1.5)
 lines(x.axis,expert4[,2],col="blue",type="l",lwd=3)
 lines(x.axis,expert4[,3],col="darkgreen",lwd=3)
 polygon(x.axis[1000:4000],expert4[1000:4000,3],col="darkgreen",density=10)
@@ -229,8 +229,8 @@ legend("topright","d = 4",bty="n", cex=2)
 
 #png(file="figure6_bench.png",width=800,height=400) #to store in png
 ## figure expert 4
-plot(x.axis,benchmark[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
-     lwd=3,cex.lab=1.5,cex.axis=1.5)
+plot(x.axis,benchmark[,1],col="red",type="l",xlab=expression(theta),ylab="density",xlim=c(1.5,3),ylim=c(floor(min(expert2)),ceiling(max(expert3))),
+     lwd=3,cex.lab=2,cex.axis=1.5)
 lines(x.axis,benchmark[,2],col="darkgoldenrod",type="l",lwd=3)
 lines(x.axis,benchmark[,3],col="darkgreen",lwd=3)
 polygon(x.axis,benchmark[,3],col="darkgreen",density=10)
@@ -241,8 +241,8 @@ legend("topleft","E",bty="n", cex=2)
 plot(0, 0, type='n', bty='n', xaxt='n', yaxt='n',ylab="",xlab="")
 legend("center", legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi[d],"(",theta,")")),
                           expression(paste(pi^J,"(",theta,")")),
-                          expression(paste("KL[",pi^J,"(.|y)","||",pi[d],"]"," (panel A-D)")),
-                          expression(paste("KL[",pi^J,"(.|y)","||",pi^J,"]"," (panel E)"))), lty=1, 
+                          expression(paste("KL[",pi^J,"(.|y)","||",pi[d],"]"," (A-D)")),
+                          expression(paste("KL[",pi^J,"(.|y)","||",pi^J,"]"," (E)"))), lty=1, 
        col=c("red", "blue","darkgoldenrod","darkgreen", "darkgreen" ),
        horiz=F, bty='n', cex=2.5,lwd=3)
 
@@ -250,20 +250,22 @@ dev.off() # get png filled
 
 
 
-png(file="figure5.png",width=800,height=400) #to store in png
+png(file="figure5.png",width=1600,height=800) #to store in png
 ## figure expert 4
-par(mar = c(3,3,3,3)) ## setting for legend function
-plot(x.axis,benchmark[,1],col="red",type="l",xlab="",ylab="density",xlim=c(1.5,3),ylim=c(0,ceiling(max(expert2[,2]))),lwd=3)
-lines(x.axis,benchmark[,2],col="darkgoldenrod",type="l",lwd=3)
-lines(x.axis,expert1[,2],col="blue",lty=2,lwd=3)
-lines(x.axis,expert2[,2],col="blue",lty=3,lwd=3)
-lines(x.axis,expert3[,2],col="blue",lty=4,lwd=3)
-lines(x.axis,expert4[,2],col="blue",lty=5,lwd=3)
+par(mar = c(6,6,3,3)) ## setting for legend function
+plot(x.axis,benchmark[,1],col="red",type="l",xlab=expression(theta),
+     ylab="density",xlim=c(1.5,3),ylim=c(0,ceiling(max(expert2[,2]))),lwd=5,
+     cex.lab = 3.5, cex.axis=2.5)
+lines(x.axis,benchmark[,2],col="darkgoldenrod",type="l",lwd=5)
+lines(x.axis,expert1[,2],col="blue",lty=2,lwd=5)
+lines(x.axis,expert2[,2],col="blue",lty=3,lwd=5)
+lines(x.axis,expert3[,2],col="blue",lty=4,lwd=5)
+lines(x.axis,expert4[,2],col="blue",lty=5,lwd=5)
 
-legend("topright",bty="n",lty=c(1,1,2,3,4,5),lwd=c(2,2,2,2,2,2),col=c("red","darkgoldenrod","blue","blue","blue","blue"),
+legend("topright",bty="n",lty=c(1,1,2,3,4,5),lwd=c(5,5,5,5,5,5),col=c("red","darkgoldenrod","blue","blue","blue","blue"),
        legend=c(expression(paste(pi^J,"(",theta,"|y)")),expression(paste(pi^J,"(",theta,")")),
                 expression(paste(pi[1],"(",theta,")")),expression(paste(pi[2],"(",theta,")")),expression(paste(pi[3],"(",theta,")")),
-                expression(paste(pi[4],"(",theta,")"))),cex=1.5,inset=c(0.05,0,0,0))
+                expression(paste(pi[4],"(",theta,")"))),cex=4,inset=c(0.05,0,0,0))
 
 dev.off() # get png filled
 

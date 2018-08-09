@@ -182,17 +182,22 @@ layout <- list(
       spikesides = TRUE, 
       spikethickness = 2, 
       title = "Distance to mean of data", 
-      type = "linear"
+      type = "linear", 
+      titlefont = list(size = 21),
+      font = list(3)
     ), 
     yaxis = list(
       title = "sd", 
-      type = "linear"
+      type = "linear", 
+      titlefont = list(size = 21),
+      font = list(3)
     ), 
     zaxis = list(
       autorange = FALSE, 
       range = c(-1, 4), 
       title = "DAC", 
-      titlefont = list(size = 13)
+      titlefont = list(size = 21),
+      font = list(3)
     )
   ), 
   title = "Click to enter Plot title", 
@@ -336,17 +341,23 @@ DAC.panel.b <- expert.kl.panel.b / benchmark.kl.panel.b
         spikesides = TRUE, 
         spikethickness = 2, 
         title = "Distance to mean of data", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       yaxis = list(
         title = "sd", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       zaxis = list(
         autorange = FALSE, 
         range = c(-1, 4), 
         title = "DAC", 
-        titlefont = list(size = 13)
+        titlefont = list(size = 13), 
+        titlefont = list(size = 21),
+        font = list(3)
       )
     ), 
     title = "Click to enter Plot title", 
@@ -497,17 +508,23 @@ DAC.panel.c <- expert.kl.panel.c / benchmark.kl.panel.c
         spikesides = TRUE, 
         spikethickness = 2, 
         title = "Distance to mean of data", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       yaxis = list(
         title = "sd", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       zaxis = list(
         autorange = FALSE, 
         range = c(-1, 4), 
         title = "DAC", 
-        titlefont = list(size = 13)
+        titlefont = list(size = 13), 
+        titlefont = list(size = 21),
+        font = list(3)
       )
     ), 
     title = "Click to enter Plot title", 
@@ -664,17 +681,23 @@ DAC.panel.d <- expert.kl.panel.d / benchmark.kl.panel.d
         spikesides = TRUE, 
         spikethickness = 2, 
         title = "Distance to mean of data", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       yaxis = list(
         title = "sd", 
-        type = "linear"
+        type = "linear", 
+        titlefont = list(size = 21),
+        font = list(3)
       ), 
       zaxis = list(
         autorange = FALSE, 
         range = c(-1, 4), 
         title = "DAC", 
-        titlefont = list(size = 13)
+        titlefont = list(size = 13), 
+        titlefont = list(size = 21),
+        font = list(3)
       )
     ), 
     title = "Click to enter Plot title", 

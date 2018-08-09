@@ -41,7 +41,8 @@ x.axis <- seq(-4,4,by=.001) #get range for x-axis
 out <- KLskewednormal(mu1=0,mu2=1,sigma1=1,sigma2=1,gamma1 = 1,gamma2 = 1,x=x.axis) 
 KLdiv(out[,1:2],eps=1e-8)[1,2] # #.125 exact equal to what should be: 0.125 
 
-plot(x.axis,out[,1],col="red",type="l",xlab="",ylab="density",xlim=c(-4,4),ylim=c(-.15,.6),lwd=3)
+plot(x.axis,out[,1],col="red",type="l",xlab=expression(theta),
+     ylab="density",xlim=c(-4,4),ylim=c(-.15,.6),lwd=3, cex.lab = 1.5)
 #polygon(x.axis,out[,1],col="red",density=10)
 lines(x.axis,out[,2],col="blue",type="l",lwd=3)
 #polygon(x.axis,out[,2],col="blue",density=10)
